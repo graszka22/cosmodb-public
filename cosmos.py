@@ -1,8 +1,8 @@
 import azure.cosmos.cosmos_client as cosmos_client
 
 config = {
-    'ENDPOINT': 'FILLME',
-    'PRIMARYKEY': 'FILLME',
+    'ENDPOINT': 'https://52c4af3e-0ee0-4-231-b9ee.documents.azure.com:443/',
+    'PRIMARYKEY': 'hKUhLx0Ix7Vkz0vWliy5bgeRzhBHcUYdy5qAWKNz208vVh0yxcQVQqIxAPJV8F4LaA8y0SMPcyOkFU3dAdZ1bg==',
     'DATABASE': 'CosmosDatabase',
     'CONTAINER': 'CosmosContainer'
 }
@@ -33,7 +33,7 @@ item1 = client.CreateItem(container['_self'], {
     'Cloud Service': 0,
     'Virtual Machine': 0,
     'message': 'Hello World from Server 1!'
-    }
+}
 )
 
 item2 = client.CreateItem(container['_self'], {
@@ -42,7 +42,7 @@ item2 = client.CreateItem(container['_self'], {
     'Cloud Service': 0,
     'Virtual Machine': 0,
     'message': 'Hello World from Server 2!'
-    }
+}
 )
 
 # Query these items in SQL
